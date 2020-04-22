@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TriajeEmerActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="58dp" >
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="83dp"
+            android:layout_height="37dp"
+            android:background="@android:color/background_light"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:text="TRIAJE"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="56dp" >
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginLeft="15dp"
+            android:text=" Por favor verifique que no sea una emergencia"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="58dp" >
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Llama al 106 (SAMU) o al 117 (ESSALUD) si tienes estos sintomas"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="61dp" >
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="~ Sensacion de falta de aire o dificultad para   respirar"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="61dp" >
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="~ Desorientacion o confucion"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="~ Fiebre mayor a los 38°C por mas de dos dias"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="~ Dolor de Pecho"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="267dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:text="~ Coloracion azul en los labio"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="54dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <CheckBox
+            android:id="@+id/chkNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="No tendo ninguno de estos sintomas" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="63dp">
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="SIGUIENTE"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+</LinearLayout>

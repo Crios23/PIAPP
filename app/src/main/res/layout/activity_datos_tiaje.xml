@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DatosTiajeActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="51dp" >
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TRIAJE"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="79dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Datos del posible contagiado"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="NOMBRES" />
+
+        <EditText
+            android:id="@+id/edtNombrePC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="APELLIDOS" />
+
+        <EditText
+            android:id="@+id/edtApellidoPC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="DNI" />
+
+        <EditText
+            android:id="@+id/edtDniPC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="DEPARTAMENTO" />
+
+        <Spinner
+            android:id="@+id/spnDepaPC"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/departamento" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnSiguienteDPC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="SIGUIENTE"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </TableRow>
+
+</LinearLayout>

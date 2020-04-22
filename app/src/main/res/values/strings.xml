@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AltoAlCovid</string>
+    <string name="edtNombre">Ingrese Nombre</string>
+    <string name="edtApellido">Ingrese Apellido</string>
+    <string name="edtDni">Ingrese DNI</string>
+    <string name="edtCelular">Ingrese N° Celular</string>
+    <string name="edtCorreo">Ingrese Correo</string>
+</resources>

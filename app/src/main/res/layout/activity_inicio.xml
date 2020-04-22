@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InicioActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="63dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/minsa" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="REGISTRO OBLIGATORIO"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="NOMBRE"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/edtNombre"
+            android:inputType="textPersonName"
+            android:text=" " />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="APELLIDO"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edtApellido"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/edtApellido"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="DNI"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edtDni"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/edtDni"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="CELULAR"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edtCelular"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/edtCelular"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="59dp">
+
+        <TextView
+            android:id="@+id/edtcorreo"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="CORREO               "
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/edtCorreo"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="GUARDAR"
+            android:textColor="@android:color/background_light" />
+    </TableRow>
+
+</LinearLayout>

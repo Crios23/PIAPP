@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="51dp" >
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="456dp">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="33dp">
+
+        <ImageButton
+            android:id="@+id/imbTriaje"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/background_light"
+            app:srcCompat="?android:attr/actionModePasteDrawable" />
+
+        <ImageButton
+            android:id="@+id/imbConsulta"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/background_light"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <ImageButton
+            android:id="@+id/imbUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:background="@android:color/background_light"
+            app:srcCompat="@drawable/mapa" />
+
+        <ImageButton
+            android:id="@+id/imbAlerta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@android:color/background_light"
+            app:srcCompat="@drawable/alerta" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="TRIAJE"
+            android:textColorLink="@android:color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="CONSULTAS"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="UBICACION"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="ALERTAS"
+            android:textStyle="bold" />
+    </TableRow>
+
+</LinearLayout>

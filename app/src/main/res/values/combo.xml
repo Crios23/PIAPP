@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="departamento">
+        <item>Seleccione</item>
+        <item>Amazonas</item>
+        <item>Áncash</item>
+        <item>Apurimas</item>
+        <item>Arequipa</item>
+        <item>Ayacucho</item>
+        <item>Cajamarca</item>
+        <item>Cusco</item>
+        <item>Huancavelica</item>
+        <item>Huánuco</item>
+        <item>Ica</item>
+        <item>Junin</item>
+        <item>La Libertad</item>
+        <item>Lima</item>
+        <item>Loreto</item>
+        <item>Madre de Dios</item>
+        <item>Moquegua</item>
+        <item>Pasco</item>
+        <item>Piura</item>
+        <item>Puno</item>
+        <item>San Martín</item>
+        <item>Tacna</item>
+        <item>Tumbes</item>
+        <item>Ucayaly</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConsultaActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="150dp"
+            android:text="CUSULTA"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="53dp" >
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="DEPARTAMENTO"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spnDepa"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:entries="@array/departamento" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="RECUPERADOS"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtRecuperado"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="CASOS (+)"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtPositivo"
+            android:layout_width="154dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="FALLECIDOS"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtFallecido"
+            android:layout_width="151dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="98dp" >
+
+        <EditText
+            android:id="@+id/edtCarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="84dp" >
+
+        <Button
+            android:id="@+id/btnConCasos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Consultar" />
+    </TableRow>
+</LinearLayout>

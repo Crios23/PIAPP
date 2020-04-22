@@ -1,9 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".PreguntaTriajeActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TRIAJE"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <TextView
+            android:id="@+id/txtP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Ha tenedo antecedente de Asma,TBC, Bronquios u otra efermedad relacionada a esas"
+            android:textColor="@android:color/background_dark" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <CheckBox
+            android:id="@+id/chkP1S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="SI" />
+
+        <CheckBox
+            android:id="@+id/chkP1N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="NO" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <TextView
+            android:id="@+id/txtP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Has tenido contacto con algun paciente contagiado"
+            android:textColor="@android:color/background_dark"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <CheckBox
+            android:id="@+id/chkP2S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="SI" />
+
+        <CheckBox
+            android:id="@+id/chkP2N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="NO" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="33dp">
+
+        <TextView
+            android:id="@+id/txtP3"
+            android:layout_width="264dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:text="Tienes tos seca y persistente"
+            android:textColor="@android:color/background_dark"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <CheckBox
+            android:id="@+id/chkP3S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="SI" />
+
+        <CheckBox
+            android:id="@+id/chkP3N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="NO" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <TextView
+            android:id="@+id/txtP4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="¿Eres hipertenso?"
+            android:textColor="@android:color/background_dark"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <CheckBox
+            android:id="@+id/chkP4S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="SI" />
+
+        <CheckBox
+            android:id="@+id/chkP4N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="NO" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <TextView
+            android:id="@+id/txtP5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="¿Eres paciente Oncologico?"
+            android:textColor="@android:color/background_dark" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <CheckBox
+            android:id="@+id/chkP5S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="SI" />
+
+        <CheckBox
+            android:id="@+id/chkP5N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="NO" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <TextView
+            android:id="@+id/txtP6"
+            android:layout_width="264dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:text="¿Tienes fiebre? (+37.7ºC)"
+            android:textColor="@android:color/background_dark" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <CheckBox
+            android:id="@+id/chkP6S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="SI" />
+
+        <CheckBox
+            android:id="@+id/chkP6N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="NO" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="33dp">
+
+        <TextView
+            android:id="@+id/txtP7"
+            android:layout_width="264dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:text="¿Tienes malestar general?"
+            android:textColor="@android:color/background_dark" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <CheckBox
+            android:id="@+id/chkP7S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="SI" />
+
+        <CheckBox
+            android:id="@+id/chkP7N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="NO" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btnTFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="FINALIZAR"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </TableRow>
+
+</LinearLayout>

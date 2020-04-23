@@ -25,7 +25,9 @@
         <activity android:name=".PruebaActivity" />
         <activity android:name=".TriajeEmerActivity" />
         <activity android:name=".DatosTiajeActivity" />
-        <activity android:name=".PreguntaTriajeActivity"></activity>
+        <activity android:name=".PreguntaTriajeActivity"/>
+
+       
     </application>
 
 </manifest>

@@ -97,9 +97,6 @@ public class PreguntaTriajeActivity extends AppCompatActivity {
 
             }
         });
-
-
-
     }
 
     private void enviarRespuestas (String URL){

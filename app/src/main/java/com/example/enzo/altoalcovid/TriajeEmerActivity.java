@@ -1,5 +1,6 @@
 package com.example.enzo.altoalcovid;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,8 @@ public class TriajeEmerActivity extends AppCompatActivity {
                 else{
                    EnviarEmergencia("http://192.168.1.61:80/AppCovid/TriajeEmergencia2.php");
                }
+                Intent intent = new Intent(TriajeEmerActivity.this, PreguntaTriajeActivity.class);
+                startActivity(intent);
 
             }
         });

@@ -44,44 +44,15 @@ public class ConsultaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(spnDepa!=null){
-                    ConsultaCasos("http://192.168.1.61:80/AppCovid/casosRXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
-
-                }
-                if(spnDepa!=null){
                     ConsultaCasos("http://192.168.1.61:80/AppCovid/casosPXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
-
+                    //ConsultaCasos("http://192.168.1.61:80/AppCovid/casosRXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
+                }if(spnDepa.isSelected()){
+                    ConsultaCasos("http://192.168.1.61:80/AppCovid/casosPXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
                 }if(spnDepa!=null){
                     ConsultaCasos("http://192.168.1.61:80/AppCovid/casosFXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
                 }if(spnDepa!=null){
                     Toast.makeText(getApplicationContext(),"NO FUNCIONA", Toast.LENGTH_SHORT).show();
                 }
-                //ConsultaCasos("http://192.168.1.61:80/AppCovid/casosTXDepa.php?departamento="+snpDepa.getSelectedItem()+"");
-
-               // ConsultaCasos("http://192.168.1.61:80/AppCovid/casosTXDepa.php?");
-           /*** if(snpDepa.getSelectedItem()!=null){
-                ConsultaCasos("http://192.168.1.61:80/AppCovid/casosFXDepartamento.php?departamento="+snpDepa.getSelectedItem()+"");
-                ConsultaCasos("http://192.168.1.61:80/AppCovid/casosNXDepartamento.php?departamento="+snpDepa.getSelectedItem()+"");
-                ConsultaCasos("http://192.168.1.61:80/AppCovid/casosFXDepartamento.php?departamento="+snpDepa.getSelectedItem()+"");
-
-
-            }else{
-                Toast.makeText(getApplicationContext(),"NO FUNCIONA",Toast.LENGTH_SHORT).show();
-            }**/
-           // }else if (snpDepa.getSelectedItem()!=null){
-              //  ConsultaCasos("http://192.168.1.61:80/AppCovid/casosNXDepa.php?departamento="+snpDepa.getSelectedItem()+"");
-            //}else if (snpDepa.getSelectedItem()!=null){
-             //   ConsultaCasos("http://192.168.1.61:80/AppCovid/casosFXDepa.php?departamento="+snpDepa.getSelectedItem()+"");
-          //  }else {
-               // Toast.makeText(getApplicationContext(),"NO FUNCIONA",Toast.LENGTH_SHORT).show();
-
-
-             // if(snpDepa.getSelectedItem()!=null){ConsultaCasos("http://192.168.1.61:80/AppCovid/casosFXDepartamento.php?departamento="+snpDepa.getSelectedItem()+"");}
-             //   if(snpDepa.getSelectedItem()!=null){ConsultaCasos("http://192.168.1.61:80/AppCovid/casosFXDepartamento.php?departamento="+snpDepa.getSelectedItem()+"");}
-
-                //ConsultaCasos("http://192.168.1.61:80/AppCovid/casosTXDepa.php?departamento="+snpDepa.getSelectedItem()+"");
-               // ConsultaCasos("http://192.168.1.61:80/AppCovid/casosNXDepartamento.php?departamento="+snpDepa.getSelectedItem()+"");
-              // ConsultaCasos("http://192.168.1.61:80/AppCovid/casosFXDepartamento.php?departamento="+snpDepa.getSelectedItem()+"");
-
             }
         });
 
@@ -95,7 +66,7 @@ public class ConsultaActivity extends AppCompatActivity {
                 for (int i = 0; i < response.length(); i++) {
                     try {
                         jsonObject = response.getJSONObject(i);
-                        edtRecuperado.setText(jsonObject.getString("Recuperado"));
+                        edtRecuperado.setText(jsonObject.getString("Positivo"));
                         edtPositivo.setText(jsonObject.getString("Positivo"));
                         edtFallecido.setText(jsonObject.getString("Fallecido"));
 

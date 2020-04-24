@@ -20,7 +20,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class ConsultaActivity extends AppCompatActivity {
-    Spinner snpDepa;
+    Spinner spnDepa;
     EditText edtPositivo, edtRecuperado,edtFallecido, edtCarga;
     Button btnConCasos;
 
@@ -38,12 +38,24 @@ public class ConsultaActivity extends AppCompatActivity {
         edtRecuperado=(EditText)findViewById(R.id.edtRecuperado);
         btnConCasos=(Button)findViewById(R.id.btnConCasos);
         edtCarga=(EditText)findViewById(R.id.edtCarga) ;
-        snpDepa=(Spinner)findViewById(R.id.spnDepa);
+        spnDepa=(Spinner)findViewById(R.id.spnDepa);
 
         btnConCasos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ConsultaCasos("http://192.168.1.61:80/AppCovid/casosPXDepartamento.php?departamento="+snpDepa.getSelectedItem()+"");
+                if(spnDepa!=null){
+                    ConsultaCasos("http://192.168.1.61:80/AppCovid/casosRXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
+
+                }
+                if(spnDepa!=null){
+                    ConsultaCasos("http://192.168.1.61:80/AppCovid/casosPXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
+
+                }if(spnDepa!=null){
+                    ConsultaCasos("http://192.168.1.61:80/AppCovid/casosFXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
+                }if(spnDepa!=null){
+                    Toast.makeText(getApplicationContext(),"NO FUNCIONA", Toast.LENGTH_SHORT).show();
+                }
+                //ConsultaCasos("http://192.168.1.61:80/AppCovid/casosTXDepa.php?departamento="+snpDepa.getSelectedItem()+"");
 
                // ConsultaCasos("http://192.168.1.61:80/AppCovid/casosTXDepa.php?");
            /*** if(snpDepa.getSelectedItem()!=null){
@@ -83,9 +95,9 @@ public class ConsultaActivity extends AppCompatActivity {
                 for (int i = 0; i < response.length(); i++) {
                     try {
                         jsonObject = response.getJSONObject(i);
-                        edtRecuperado.setText(jsonObject.getString("estado"));
-                        edtPositivo.setText(jsonObject.getString("estado"));
-                        edtFallecido.setText(jsonObject.getString("estado"));
+                        edtRecuperado.setText(jsonObject.getString("Recuperado"));
+                        edtPositivo.setText(jsonObject.getString("Positivo"));
+                        edtFallecido.setText(jsonObject.getString("Fallecido"));
 
 
                     } catch (JSONException e) {

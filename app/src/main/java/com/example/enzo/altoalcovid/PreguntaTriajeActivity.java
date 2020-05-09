@@ -114,11 +114,6 @@ public class PreguntaTriajeActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String>parametros= new HashMap<String,String>();
-                //parametros.put("codigo",edtCodigo.getText().toString());
-                //if(chkNo.isChecked()==true){
-               // parametros.put("emercia",chkNo.isChecked()?"SI":"NO");
-
-
 
                 return parametros;
             }

@@ -54,45 +54,45 @@ public class PreguntaTriajeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(chkP1S.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta1si.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta1si.php");
 
                 }if (chkP1N.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta1no.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta1no.php");
                 }
                 if(chkP2S.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta2si.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta2si.php");
                 }
                 if(chkP2N.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta2no.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta2no.php");
                 }
                 if(chkP3S.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta3si.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta3si.php");
                 }
                 if(chkP3N.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta3no.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta3no.php");
                 }
                 if(chkP4S.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta4si.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta4si.php");
                 }
                 if(chkP4N.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta4no.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta4no.php");
                 }
                 if(chkP5S.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta5si.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta5si.php");
                 }
                 if(chkP5N.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta5no.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta5no.php");
                 }
                 if(chkP6S.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta6si.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta6si.php");
                 }
                 if(chkP6N.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta6no.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta6no.php");
                 }if(chkP7S.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta7si.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta7si.php");
                 }
                 if(chkP7N.isChecked()){
-                    enviarRespuestas("http://192.168.1.61:80/AppCovid/Respuesta7no.php");
+                    enviarRespuestas("http://192.168.1.2:8080/AppCovid/Respuesta7no.php");
                 }
 
             }

@@ -40,7 +40,7 @@ public class PruebaActivity extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buscarProducto("http://192.168.1.61:80/AppCovid/buscarXDepartamento.php?codigo="+edtCodigo.getText()+"");
+                buscarProducto("http://192.168.1.2:8080/AppCovid/buscarXDepartamento.php?codigo="+edtCodigo.getText()+"");
                 }
         });
 

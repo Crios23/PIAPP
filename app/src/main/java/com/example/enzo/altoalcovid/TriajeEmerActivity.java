@@ -35,10 +35,10 @@ public class TriajeEmerActivity extends AppCompatActivity {
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               if(chkNo.isChecked()){ EnviarEmergencia("http://192.168.1.61:80/AppCovid/TriajeEmergencia1.php");}
+               if(chkNo.isChecked()){ EnviarEmergencia("http://192.168.1.2:8080/AppCovid/TriajeEmergencia1.php");}
                // AppCovid/TriajeEmergencia.php
                 else{
-                   EnviarEmergencia("http://192.168.1.61:80/AppCovid/TriajeEmergencia2.php");
+                   EnviarEmergencia("http://192.168.1.2:8080/AppCovid/TriajeEmergencia2.php");
                }
                 Intent intent = new Intent(TriajeEmerActivity.this, PreguntaTriajeActivity.class);
                 startActivity(intent);

@@ -40,11 +40,27 @@ public class DatosTiajeActivity extends AppCompatActivity {
         btnSiguienteDPC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (btnSiguienteDPC.isClickable()){
+
+                String nombre=edtNombrePC.getText().toString();
+                String apellidos=edtApellidoPC.getText().toString();
+                String dni=edtDniPC.getText().toString();
+                String departamento=spnDepaPC.getSelectedItem().toString();
+
+                if(nombre.length()!=0 && apellidos.length()!=0 && dni.length()!=0 && departamento.length()!=0){
+                    DatosPC("http://192.168.1.2:8080/AppCovid/insertar_DatosPC.php");
+                    Intent intent = new Intent(DatosTiajeActivity.this, TriajeEmerActivity.class);
+                    startActivity(intent);
+
+                }
+                else {
+                    Toast.makeText(getApplicationContext(),"Ingrese campos",Toast.LENGTH_SHORT).show();
+                }
+
+               /* if (btnSiguienteDPC.isClickable()){
                 DatosPC("http://192.168.1.61:80/AppCovid/insertar_DatosPC.php");
                     //Toast.makeText(getApplicationContext(),"UD.ENVIO SUS DATOS",Toast.LENGTH_SHORT).show();
                 }Intent intent = new Intent(DatosTiajeActivity.this, TriajeEmerActivity.class);
-                startActivity(intent);//if(btnSiquiente)
+                startActivity(intent);//if(btnSiquiente)*/
 
             }
         });

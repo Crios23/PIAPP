@@ -39,7 +39,24 @@ public class InicioActivity extends AppCompatActivity {
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(edtCorreo==null){
+                String nombres=edtNombre.getText().toString();
+                String apellidos=edtApellido.getText().toString();
+                String dni=edtDni.getText().toString();
+                String celular=edtCelular.getText().toString();
+                String correo=edtCorreo.getText().toString();
+
+                if(nombres.length()!=0 && apellidos.length()!=0 && dni.length()!=0 && celular.length()!=0 && correo.length()!=0){
+                    guardarRegistro("http://192.168.1.2:8080/AppCovid/insertar_usuario.php");
+                    Intent intent = new Intent(InicioActivity.this, MenuActivity.class);
+                    startActivity(intent);
+
+                }
+                else {
+                    Toast.makeText(getApplicationContext(),"Ingrese campos",Toast.LENGTH_SHORT).show();
+                }
+
+
+                /*if(edtCorreo==null){
                     Toast.makeText(getApplicationContext(), "DEBE REGISTRARSE", Toast.LENGTH_SHORT).show();
                     //guardarRegistro("http://192.168.1.61:80/AppCovid/insertar_usuario.php");
                 }if(edtCorreo!=null) {
@@ -50,7 +67,7 @@ public class InicioActivity extends AppCompatActivity {
                 }if(edtCorreo!=null){
                     Intent intent = new Intent(InicioActivity.this, MenuActivity.class);
                     startActivity(intent);
-                }
+                }*/
 
 
             }

@@ -38,24 +38,27 @@
 
     </TableRow>
 
-    <TableRow
+    <RadioGroup
+        android:id="@+id/Rg1"
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/chkP1S"
-            android:layout_width="wrap_content"
+        <RadioButton
+            android:id="@+id/Rb1Si"
+            android:layout_width="54dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:text="SI" />
+            android:text="@string/rbSi" />
 
-        <CheckBox
-            android:id="@+id/chkP1N"
+        <RadioButton
+            android:id="@+id/Rb1No"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="NO" />
-    </TableRow>
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-32dp"
+            android:text="@string/rbNo" />
+
+    </RadioGroup>
 
     <TableRow
         android:layout_width="match_parent"
@@ -71,25 +74,27 @@
 
     </TableRow>
 
-    <TableRow
+
+    <RadioGroup
+        android:id="@+id/Rg2"
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/chkP2S"
-            android:layout_width="wrap_content"
+        <RadioButton
+            android:id="@+id/Rb2Si"
+            android:layout_width="54dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:text="SI" />
+            android:text="@string/rbSi" />
 
-        <CheckBox
-            android:id="@+id/chkP2N"
+        <RadioButton
+            android:id="@+id/Rb2No"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="NO" />
-    </TableRow>
-
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-33dp"
+            android:text="@string/rbNo" />
+    </RadioGroup>
 
     <TableRow
         android:layout_width="match_parent"
@@ -105,24 +110,26 @@
 
     </TableRow>
 
-    <TableRow
+    <RadioGroup
+        android:id="@+id/Rg3"
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/chkP3S"
-            android:layout_width="wrap_content"
+        <RadioButton
+            android:id="@+id/Rb3Si"
+            android:layout_width="54dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:text="SI" />
+            android:text="@string/rbSi" />
 
-        <CheckBox
-            android:id="@+id/chkP3N"
+        <RadioButton
+            android:id="@+id/Rb3No"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="NO" />
-    </TableRow>
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-33dp"
+            android:text="@string/rbNo" />
+    </RadioGroup>
 
     <TableRow
         android:layout_width="match_parent"
@@ -138,24 +145,25 @@
 
     </TableRow>
 
-    <TableRow
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/chkP4S"
-            android:layout_width="wrap_content"
+        <RadioButton
+            android:id="@+id/Rb4Si"
+            android:layout_width="56dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:text="SI" />
+            android:text="@string/rbSi" />
 
-        <CheckBox
-            android:id="@+id/chkP4N"
+        <RadioButton
+            android:id="@+id/Rb4No"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="NO" />
-    </TableRow>
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-32.5dp"
+            android:text="@string/rbNo" />
+    </RadioGroup>
 
     <TableRow
         android:layout_width="match_parent"
@@ -171,24 +179,25 @@
 
     </TableRow>
 
-    <TableRow
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/chkP5S"
-            android:layout_width="wrap_content"
+        <RadioButton
+            android:id="@+id/Rb5Si"
+            android:layout_width="56dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:text="SI" />
+            android:text="@string/rbSi" />
 
-        <CheckBox
-            android:id="@+id/chkP5N"
+        <RadioButton
+            android:id="@+id/Rb5No"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="NO" />
-    </TableRow>
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-32.5dp"
+            android:text="@string/rbNo" />
+    </RadioGroup>
 
     <TableRow
         android:layout_width="match_parent"
@@ -204,24 +213,25 @@
 
     </TableRow>
 
-    <TableRow
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/chkP6S"
-            android:layout_width="wrap_content"
+        <RadioButton
+            android:id="@+id/Rb6Si"
+            android:layout_width="56dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:text="SI" />
+            android:text="@string/rbSi" />
 
-        <CheckBox
-            android:id="@+id/chkP6N"
+        <RadioButton
+            android:id="@+id/Rb6No"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="NO" />
-    </TableRow>
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-32.5dp"
+            android:text="@string/rbNo" />
+    </RadioGroup>
 
     <TableRow
         android:layout_width="match_parent"
@@ -237,24 +247,25 @@
 
     </TableRow>
 
-    <TableRow
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="wrap_content">
 
-        <CheckBox
-            android:id="@+id/chkP7S"
-            android:layout_width="wrap_content"
+        <RadioButton
+            android:id="@+id/Rb7Si"
+            android:layout_width="56dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:text="SI" />
+            android:text="@string/rbSi" />
 
-        <CheckBox
-            android:id="@+id/chkP7N"
+        <RadioButton
+            android:id="@+id/Rb7No"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="NO" />
-    </TableRow>
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-32.5dp"
+            android:text="@string/rbNo" />
+    </RadioGroup>
 
     <TableRow
         android:layout_width="match_parent"
@@ -269,6 +280,7 @@
             android:text="FINALIZAR"
             android:textColor="@android:color/background_light"
             android:textStyle="bold" />
+
     </TableRow>
 
 </LinearLayout>

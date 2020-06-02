@@ -46,8 +46,13 @@ public class DatosTiajeActivity extends AppCompatActivity {
                 String dni=edtDniPC.getText().toString();
                 String departamento=spnDepaPC.getSelectedItem().toString();
 
+<<<<<<< HEAD
                 if(nombre.length()!=0 && apellidos.length()!=0 && dni.length()!=0 && departamento.length()!=0){
                     DatosPC("http://192.168.1.61:80/AppCovid/insertar_DatosPC.php");
+=======
+                if(nombre.length()!=0 && apellidos.length()!=0 && dni.length()!=0 && !departamento.equals("Seleccione")){
+                    DatosPC("http://192.168.1.2:8080/AppCovid/insertar_DatosPC.php");
+>>>>>>> a944949526e6a4507a14e1797f571c2bfc1cb37e
                     Intent intent = new Intent(DatosTiajeActivity.this, TriajeEmerActivity.class);
                     startActivity(intent);
 

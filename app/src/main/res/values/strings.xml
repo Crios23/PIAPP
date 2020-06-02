@@ -5,4 +5,6 @@
     <string name="edtDni">Ingrese DNI</string>
     <string name="edtCelular">Ingrese N° Celular</string>
     <string name="edtCorreo">Ingrese Correo</string>
+    <string name="rbSi">Sí</string>
+    <string name="rbNo">No</string>
 </resources>

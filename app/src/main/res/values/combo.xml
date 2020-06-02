@@ -2,12 +2,12 @@
 <resources>
 
     <string-array name="departamento">
-        <item>Seleccione</item>
-        <item>Amazonas</item>
-        <item>Áncash</item>
-        <item>Apurimas</item>
-        <item>Arequipa</item>
-        <item>Ayacucho</item>
+        <item >Seleccione</item>
+        <item >Amazonas</item>
+        <item >Áncash</item>
+        <item >Apurimac</item>
+        <item >Arequipa</item>
+        <item >Ayacucho</item>
         <item>Cajamarca</item>
         <item>Cusco</item>
         <item>Huancavelica</item>
@@ -15,6 +15,7 @@
         <item>Ica</item>
         <item>Junin</item>
         <item>La Libertad</item>
+        <item>Lambayeque</item>
         <item>Lima</item>
         <item>Loreto</item>
         <item>Madre de Dios</item>
@@ -28,4 +29,7 @@
         <item>Ucayaly</item>
 
     </string-array>
+
+
+
 </resources>

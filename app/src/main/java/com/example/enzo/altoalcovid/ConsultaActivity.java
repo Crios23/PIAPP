@@ -43,11 +43,11 @@ public class ConsultaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(btnConCasos.isClickable()){
-                    ConsultaCasosP("http://192.168.1.2:8080/AppCovid/casosPXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
+                    ConsultaCasosP("http://192.168.1.61:80/AppCovid/casosPXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
                 }if (btnConCasos.isClickable()){
-                    ConsultaCasosR("http://192.168.1.2:8080/AppCovid/casosRXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
+                    ConsultaCasosR("http://192.168.1.61:80/AppCovid/casosRXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
                 }if(btnConCasos.isClickable()){
-                    ConsultaCasosF("http://192.168.1.2:8080/AppCovid/casosFXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
+                    ConsultaCasosF("http://192.168.1.61:80/AppCovid/casosFXDepartamento.php?departamento="+spnDepa.getSelectedItem()+"");
                 }if(btnConCasos.isClickable()) {
                     Toast.makeText(getApplicationContext(), "Resultados actualizados el dia de hoy", Toast.LENGTH_SHORT).show();
                 }

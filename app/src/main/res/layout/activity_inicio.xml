@@ -49,12 +49,13 @@
 
         <EditText
             android:id="@+id/edtNombre"
-            android:layout_width="182dp"
+            android:layout_width="181dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/edtNombre"
-            android:inputType="textPersonName"
-            android:text=" " />
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:inputType="textPersonName" />
+
     </TableRow>
 
     <TableRow
@@ -75,6 +76,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/edtApellido"
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:inputType="textPersonName" />
     </TableRow>
 

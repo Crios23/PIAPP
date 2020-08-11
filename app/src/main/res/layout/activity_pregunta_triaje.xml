@@ -146,6 +146,7 @@
     </TableRow>
 
     <RadioGroup
+        android:id="@+id/Rg4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -180,6 +181,7 @@
     </TableRow>
 
     <RadioGroup
+        android:id="@+id/Rg5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -214,6 +216,7 @@
     </TableRow>
 
     <RadioGroup
+        android:id="@+id/Rg6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -248,6 +251,7 @@
     </TableRow>
 
     <RadioGroup
+        android:id="@+id/Rg7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

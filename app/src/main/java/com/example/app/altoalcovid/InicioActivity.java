@@ -28,6 +28,7 @@ import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 
 public class InicioActivity extends AppCompatActivity {
@@ -345,34 +346,62 @@ public class InicioActivity extends AppCompatActivity {
                 }
             });
 
-
         //===============================
-
-        btnGuardar.setOnClickListener(new View.OnClickListener() {
+       btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                validaciones();
+            }
+        });
+
+    }
+    private boolean isValidEmailId(String email){
+        return Pattern.compile("^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@"
+                + "((([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\."
+                + "([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])){1}|"
+                + "([a-zA-Z]+[\\w-]+\\.)+[a-zA-Z]{2,4})$").matcher(email).matches();
+    }
+
+    private void validaciones(){
                 String nombres=edtNombre.getText().toString();
                 String apellidos=edtApellido.getText().toString();
                 String dni=edtDni.getText().toString();
                 String celular=edtCelular.getText().toString();
                 String correo=edtCorreo.getText().toString();
 
-                if(nombres.length()!=0 && apellidos.length()!=0 && dni.length()!=0 && celular.length()!=0 && correo.length()!=0){
-                    guardarRegistro("http://192.168.1.61:80/AppCovid/insertar_usuarioCombo.php");
+                if(nombres.isEmpty()){
+                    Toast.makeText(this, "Campo Nombres es obligatorio", Toast.LENGTH_SHORT).show();
+                }else if(apellidos.isEmpty()){
+                    Toast.makeText(this, "Campo Apellidos es obligatorio", Toast.LENGTH_SHORT).show();
+                }else if(dni.isEmpty()){
+                    Toast.makeText(this, "Campo DNI es obligatorio", Toast.LENGTH_SHORT).show();
+                }else if(!dni.matches("^[0-9]{8}$")) {
+                    Toast.makeText(this, "Ingrese 8 dígitos", Toast.LENGTH_SHORT).show();
+                }else if(celular.isEmpty()){
+                    Toast.makeText(this, "Campo celular es obligatorio" , Toast.LENGTH_SHORT).show();
+                }else if(!celular.matches("^[0-9]{9,15}$")){
+                    Toast.makeText(this, "Ingrese Mínimo 9 digitos y Máximo 15 dígitos" , Toast.LENGTH_SHORT).show();
+                }else if(correo.isEmpty() ){
+                    Toast.makeText(this, "Campo correo es obligatorio", Toast.LENGTH_SHORT).show();
+                }else if(!isValidEmailId(correo)){
+                    Toast.makeText(this, "Email Invalido", Toast.LENGTH_SHORT).show();
+                }else if(spn_Departamento.getSelectedItem().equals("Seleccione")){
+                    Toast.makeText(this, "Seleccione un departamento", Toast.LENGTH_SHORT).show();
+                }
+                else if(spn_Provincia.getSelectedItem().equals("Seleccione")){
+                    Toast.makeText(this, "Seleccione una provincia", Toast.LENGTH_SHORT).show();
+                }
+                else if(spn_Distrito.getSelectedItem().equals("Seleccione")){
+                    Toast.makeText(this, "Seleccione un distrito", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    guardarRegistro("http://192.168.1.2:80/AppCovid/insertar_usuario.php");
                     Intent intent = new Intent(InicioActivity.this, MenuActivity.class);
                     startActivity(intent);
-
-                }else {
-                    Toast.makeText(getApplicationContext(),"Ingrese campos",Toast.LENGTH_SHORT).show();
                 }
-
-            }
-        });
-
-
     }
-
-
 
     private void guardarRegistro(String URL){
 

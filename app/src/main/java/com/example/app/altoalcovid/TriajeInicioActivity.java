@@ -26,15 +26,7 @@ public class TriajeInicioActivity extends AppCompatActivity {
 
             }
         });
-/***
-        btnIniciar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(TriajeInicioActivity.this,TriajeEmerActivity.class);
-                startActivity(intent);
 
-            }
-        });**/
 
     }
 }

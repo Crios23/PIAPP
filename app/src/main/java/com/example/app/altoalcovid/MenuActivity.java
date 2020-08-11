@@ -45,7 +45,7 @@ public class MenuActivity extends AppCompatActivity {
         dialogo1.setCancelable(false);
         dialogo1.setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo1, int id) {
-                //listaCasos("http://192.168.1.2:8080/AppCovid/SelectMenuR.php");
+                //listaCasos("http://192.168.1.2:80/AppCovid/SelectMenuR.php");
                 aceptar();
             }
         });
@@ -82,17 +82,26 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton imgbu = (ImageButton) findViewById(R.id.imbUbicacion);
+        imgbu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this,Gps.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
   public void aceptar() {
         if(lblP.getText().toString().isEmpty()){
-      listaCasos("http://192.168.1.61:80/AppCovid/SelectMenu.php");
+      listaCasos("http://192.168.1.2:80/AppCovid/SelectMenu.php");
         }
      if(lblP!=null){
-            listaRecuperado("http://192.168.1.61:80/AppCovid/SelectMenuR.php");
+            listaRecuperado("http://192.168.1.2:80/AppCovid/SelectMenuR.php");
         }
       if(lblP!=null){
-          listaFallecido("http://192.168.1.61:80/AppCovid/SelectMenuF.php");
+          listaFallecido("http://192.168.1.2:80/AppCovid/SelectMenuF.php");
         }
           Toast t=Toast.makeText(this,"Bienvenido al Menu de Alto al Covid", Toast.LENGTH_SHORT);
           t.show();
